@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/11/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>最新--ORB-SLAM3安装与环境配置（问题解决）</title>
     <url>/2024/11/02/%E6%9C%80%E6%96%B0-ORB-SLAM3%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%88%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="1-1-安装ORB-SLAM3时遇到的问题"><a href="#1-1-安装ORB-SLAM3时遇到的问题" class="headerlink" title="1.1 安装ORB-SLAM3时遇到的问题"></a>1.1 安装ORB-SLAM3时遇到的问题</h1><h2 id="1-1-1-问题1：提示System-cc-o的Error，具体boost库无法找到"><a href="#1-1-1-问题1：提示System-cc-o的Error，具体boost库无法找到" class="headerlink" title="1.1.1 问题1：提示System.cc.o的Error，具体boost库无法找到"></a>1.1.1 问题1：提示System.cc.o的Error，具体boost库无法找到</h2><ul>
+<li>使用源码构建boost库，但&#x2F;usr&#x2F;local&#x2F;include路径下关于boost库的.cpp和.hpp文件有一些是空的；</li>
+<li>使用命令<code>sudo apt-get install libboost-all-dev</code>安装的库存放在了&#x2F;usr&#x2F;include&#x2F;boost目录下，而不是&#x2F;usr&#x2F;local&#x2F;include目录下。</li>
+<li>解决方法：<ul>
+<li>将&#x2F;usr&#x2F;include&#x2F;boost目录下的.cpp和.hpp文件复制到&#x2F;usr&#x2F;local&#x2F;include目录下。运行成功。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> -r /usr/include/boost /usr/local/include/</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+]]></content>
   </entry>
 </search>
