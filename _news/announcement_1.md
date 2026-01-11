@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-11-21 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Sparse3DPR has been accepted to AAAI 2026 <span style="color: red;">(oral)</span>!
