@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I am a second-year Ph.D. student at the **Institute of Automation, Chinese Academy of Sciences (CASIA)**. I work in the State Key Laboratory of Multimodal Artificial Intelligence Systems. I earned my bachelor's degree from **Hebei University of Technology** in 2016.
+Hi there! I am **Haida Feng** (**冯海达**, also written as **Feng Haida**), a second-year Ph.D. student at the **Institute of Automation, Chinese Academy of Sciences (CASIA)**. I work in the State Key Laboratory of Multimodal Artificial Intelligence Systems. I earned my bachelor's degree from **Hebei University of Technology** in 2016.
 
 My research interest lies at the intersection of **3D scene understanding**, **video understanding**, and **3D Vision-Language Models (3D VLMs)**. I am currently focused on enabling VLMs to learn and infer 3D structural and geometric information solely based on video inputs. Through my research, I aim to create methods that allow systems to effectively interpret spatial-temporal sensory input and build a comprehensive representation of the 3D world, facilitating better reasoning about complex physical environments.
